@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="UTF-8">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width-device-width, initial-scale=1.0">
+      <meta http-equiv="x-UA-compitable" content="ie-edge">
+      <link rel="stylesheet" href="Untitled-2.css">
+      <script src="https://kit.fontawesome.com/cd0ad4658b.js" crossorigin="anonymous"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Test Page</title>
+    <link rel="stylesheet" href="teststyle.css">
+    </head>
+    <body>
+        
+        <!--start header-->
+        
+        <div class="header">
+            <div class="company-name">
+                <h1>stc </h1>
+                <a class="text">Rasel Confidential Correspomdence</a>
+            </div>
+            <nav class="nav-bar">
+                <ul class="nav-links">
+                    <li><a href="#"><i class="far fa-bell"></i></a></li>
+                    <li><a href="#"><i class="fas fa-cog"></i></a></li>
+                    <li><a href="#"><i class="fas fa-globe"></i></a></li>
+                    <li><a href="#"><i class="fas fa-sign-out-alt"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <!--end header-->
+        
+        <!--start side-nav-->
+        
+        <nav class="section">
+            <nav class="side-nav">
+                <ul class="side-nav-links" >
+                    <li  class="flip" onclick="myFunction()" ><a href="#"  ><i class="fas fa-home fa-1x"></i></a></li>
+                    <li><a href="#"><i class="fas fa-notes-medical fa-1x"></i></a></li>
+                    <li><a href="#"><i class="fas fa-tasks fa-1x"></i></a></li>
+                    <li><a href="#"><i class="fab fa-telegram-plane fa-1x"></i></a></li>
+                </ul>
+                <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+                <script type="text/javascript">
+                $(Document).on('click','ul li',function(){
+                $(this).addClass('active').siblings().removeClass('active')
+                })</script>
+            </nav>    
+
+        </nav>
+        
+       <!--end side-nav-->
+       <div class="main">
+        <div id="panel" style="display: none;">
+         <iframe class="main" src="01.html" title="Iframe Example" style="border:none;"></iframe>  
+        </div>
+        <script type="text/javascript">
+         function myFunction() {
+         var x = document.getElementById("panel");
+         if (window.getComputedStyle(x).display === "none"){ x.style.display = "flex"; x.style.height="100%";}
+         }
+      </script>
+       
+       </div>
+    </body>
+</html>    

@@ -1,0 +1,125 @@
+body
+{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 0.15fr 1.2fr 1.2fr 1.2fr;
+    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr ;
+    grid-template-areas: 
+        "header header header header"
+        "sidenav main main main"
+        "sidenav main main main"
+        "sidenav main main main";
+}
+
+/*start header*/
+
+.header
+{
+    background-color: white;
+    border: 2px solid #f2f2f2;
+    overflow: hidden;
+    height: 50px;
+    grid-area: header;  
+}
+
+.header .company-name
+{ 
+    float: left;
+    margin-left: 20px;
+}
+
+.header .company-name h1
+{
+    display: inline-block;
+    color: #6600cc
+}
+
+.header .company-name .text
+{
+    color:#bfbfbf
+}
+
+.header .nav-bar ul
+{
+    list-style: none;
+    float: right;
+    padding-right: 10px;
+    color: #d9d9d9
+}
+
+.header .nav-bar ul li
+{
+    padding: 20px;
+    float: left; 
+}
+
+.header .nav-bar ul li a
+{
+    color: #808080
+}
+
+/*end header*/
+
+/*start side-nav*/
+.section
+{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    width: 100%;
+    float: left;
+    height: 100%;
+    grid-area: sidenav;
+  }
+  .side-nav
+  {
+    background-color: blueviolet;
+    display:inline-block;
+    align-items:center;
+    width: 100%;
+    height: 100%;
+    margin-left: 10px;
+    padding-top: 10px;
+  }
+  .side-nav ul
+  {
+    list-style: none;
+    height: 100%;
+    position: fixed;
+    margin-left: -30px;
+
+    
+  }
+  .side-nav ul li a
+  {
+    color: white;
+    align-items: center;
+    line-height: 50px;
+    padding-right: 30px;
+    padding-left: 10px;
+  }
+  
+  .side-nav ul li.active
+  {
+    background-color:white;
+  }
+
+  .side-nav ul li.active a
+  {
+      color: blueviolet;
+  } 
+
+/*end side-nav*/
+
+/*start main*/
+
+.main
+{
+    grid-area: main;
+    height: 100%;
+    width: 100%; 
+    border: none;
+    
+}
+
+/*end main*/

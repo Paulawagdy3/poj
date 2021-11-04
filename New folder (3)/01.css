@@ -1,0 +1,286 @@
+body
+{
+    background-color: none;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 2fr 1.7fr 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 0.2fr 0.2fr 0.2fr 0.2fr;
+    grid-template-areas: 
+        "clock main1 main2 main3 main4"
+        "main5 main5 main5 main5 main5"
+        "table table table table table"
+        "table table table table table"
+        "main main main main main";       
+}
+
+/*start tolbar*/
+
+.tolbar
+{   
+    margin-top: 20px;
+    margin-left: 40px;
+    width:200%;
+    height: 100%;
+}
+
+.tolbar .title b
+{
+    color:#6600cc;
+    font-size: 40px;
+    grid-area: clock;
+
+}
+
+.tolbar .title p
+{
+    font-size: 30px;
+    margin-top: -10px;
+    grid-area: clock;
+
+}
+
+
+.tolbar .title p span
+{
+    color:#6600cc
+}
+
+.tolbar .clock img
+{
+    width: 50px;
+    height: 50px;
+    grid-area: clock;
+
+}
+
+.tolbar .clock .numdate
+{
+    font-size: 30px;
+    margin-left: 5px;
+
+}
+
+.tolbar .clock .text-date
+{
+    margin-left: 65px;
+    margin-top: -15px;
+}
+/*end tolbar*/
+
+.back{
+    display: flex;
+    background-color:white;
+    width: 90%;
+    height: 50%;
+    margin-top: 70px;
+    border-radius: 10px;
+    
+}
+
+/*start info1*/
+
+.info1
+{   
+    margin-top: 30px;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    color: #6600cc;
+}
+.info1 a
+{
+    grid-area: main1;
+    border: 1px solid rgba(107, 107, 107, 0.24);
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    color: #6600cc;
+}
+
+.info1 h1
+{
+    grid-area: main1;
+    margin-left: 5px;
+    color: #6600cc;
+}
+
+.info1 p
+{
+    grid-area: main1;
+    margin-top: 10px;
+    color: #979697;
+}
+
+/*end info1*/
+
+/*start info2*/
+
+.info2
+{   
+    margin-top: 30px;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    color: #6600cc;
+}
+.info2 a
+{
+    grid-area: main1;
+    border: 1px solid rgba(107, 107, 107, 0.24);
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    color: #6600cc;
+}
+
+.info2 h1
+{
+    grid-area: main1;
+    margin-left: 5px;
+    color: #6600cc;
+}
+
+.info2 p
+{
+    grid-area: main1;
+    color: #979697;
+}
+/*end info2*/
+
+.pending
+{   
+    align-items: center;
+    width: 90%;
+    background-color:white;
+    height: 50%;
+    margin-top: 70px;
+    border-radius: 10px;
+}
+
+.pending h4
+{
+    grid-area: main2;
+    padding-top: 10px;
+    padding-left: 22%;
+    color: #6600cc;
+
+}
+
+
+.pending p
+{
+    grid-area: main2;
+    padding-left: 20%;
+    font-size: 30px;
+    color: #979697;
+
+}
+
+.pending p span{
+    font-size: 20px;
+}
+.in-progress
+{   
+    align-items: center;
+    width: 90%;
+    background-color:white;
+    height: 50%;
+    margin-top: 70px;
+    border-radius: 10px;
+}
+
+.in-progress h4
+{
+    grid-area: main2;
+    padding-top: 10px;
+    padding-left: 22%;
+    color: #6600cc;
+
+}
+
+.in-progress p
+{
+    grid-area: main2;
+    padding-left: 20%;
+    font-size: 30px;
+    color: #979697;
+
+}
+
+.in-progress p span{
+    font-size: 20px;
+}
+.processed
+{   
+    width: 90%;
+    background-color: white;
+    height: 50%;
+    margin-top: 70px;
+    border-radius: 10px;
+    
+
+}
+.processed h4
+{
+    grid-area: main2;
+    padding-top: 10px;
+    padding-left: 22%;
+    color: #6600cc;
+
+}
+
+.processed p
+{
+    grid-area: main2;
+    padding-left: 20%;
+    font-size: 30px;
+    color:#979697;
+
+}
+
+.processed p span
+{
+    font-size: 20px;
+}
+
+.title-table
+{
+    grid-area: main5;
+    padding-left: 48px;
+    padding-top: 80px;
+    font-size: 30px;
+    color: #6600cc;
+
+    
+}
+
+table
+{   
+    grid-area: table;
+    margin-left: 50px;
+    line-height: 50px;
+    width: 95%;
+    margin-bottom: 1rem;
+    color: #212529;
+    
+
+}
+
+table  thead .tr1
+{
+    background-color: white;
+    align-content: space-between;
+
+}    
+
+table tbody .first
+{
+    color: #6600cc;
+}
+
+table tbody .second
+{
+    color:#979697
+}

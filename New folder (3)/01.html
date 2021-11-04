@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="UTF-8">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width-device-width, initial-scale=1.0">
+      <meta http-equiv="x-UA-compitable" content="ie-edge">
+      <link rel="stylesheet" href="01.css">
+      <script src="https://kit.fontawesome.com/cd0ad4658b.js" crossorigin="anonymous"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Test Page</title>
+    <link rel="stylesheet" href="teststyle.css">
+    </head>
+    <body>
+
+      
+       <!--start tolbar-->
+        <div class="tolbar">
+            <div class="title">
+                <b>HomePage</b>
+                <p>Good Evening,<span>sherif Elshamaa</span></p>
+            </div>
+            <div class="clock">
+                <img src="clock-flat.png">
+
+                <b class="numdate" id="demo"></b>
+                <script>
+                var myVar = setInterval(myTimer, 1000);
+                function myTimer() {
+                var d = new Date();
+                document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+                }
+                </script>
+
+
+                <div class="text-date" ng-app="myApp" ng-controller="datCtrl">
+
+                    <p>{{ today | date : " MMMM d, y" }}</p>
+                    
+                    </div>
+                    
+                    <script>
+                    var app = angular.module('myApp', []);
+                    app.controller('datCtrl', function($scope) {
+                        $scope.today = new Date();
+                    });
+                    </script>
+                    
+            </div>
+        </div>
+       
+        
+        <!--end tolbar-->
+        
+        <!--start info-->
+        <div class="back">  
+            <div class="info1">
+                <a href="#"><i class="fas fa-tasks fa-1x fa-2x"></i></a>
+                <h1>36</h1>
+                <p>Recieved mails</p>
+                
+            </div>
+
+            <div class="info2">
+                <a href="#"><i class="fab fa-telegram-plane fa-2x"></i></a>
+                <h1>16</h1>
+                <p>sent mails</p>
+            </div>
+        </div>     
+        <div class="pending">
+            <h4>pending</h4>
+            <p>15 <span>sent mails</span></p>
+        </div>
+        <div class="in-progress">
+            <h4>in progress</h4>
+            <p>15 <span>sent mails</span></p>
+        </div>
+        <div class="processed">
+            <h4>processed</h4>
+            <p>15 <span>sent mails</span></p>
+        </div>
+
+    </table>
+    
+    <div class="title-table">
+        <p>Recent Correspodemce</p> 
+     </div>
+         
+    
+    <table>
+      <thead>
+          <tr class="tr1">
+              <th><i href="#" class="fas fa-sort-amount-down-alt"></i> Subject</th>
+              <th>Distribution</th>
+              <th>Date Created</th>
+              <th>Action</th>
+              <th>Status</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td>01 Subject enter the minmum50 letters</td>
+              <td class="first" >Abdulmalik Abdulaziz</td>
+              <td class="second">11/11/2020</td>
+              <td class="therd">Completed</td>
+              <td>Executed</td>
+          </tr>
+          <tr>
+              <td>02 Subject enter the minmum50 letters</td>
+              <td class="first">Abdulmalik Abdulaziz</td>
+              <td class="second">11/11/2020</td>
+              <td>pending</td>
+              <td>Active</td>
+          </tr>
+          <tr>
+              <td>03 Subject enter the minmum50 letters</td>
+              <td class="first">Abdulmalik Abdulaziz</td>
+              <td class="second">11/11/2020</td>
+              <td>Feedback</td>
+              <td>1</td>
+          </tr>
+          <tr>
+              <td>04 Subject enter the minmum50 letters</td>
+              <td class="first">Abdulmalik Abdulaziz</td>
+              <td class="second">11/11/2020</td>
+              <td>Completed</td>
+              <td>Executed</td>
+          </tr>
+      </tbody>
+  </table>
+    </body>
+</html>    
